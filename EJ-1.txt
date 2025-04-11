@@ -1,0 +1,85 @@
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+  Es un lenguaje utilizado para publicar información y distribuirla globalmente, ya que todas las computadoras pueden
+  comprenderlo. HTML es un acrónimo de HyperText Markup Language, Lenguaje para el Formato de Documentos de Hipertexto
+  El HTML da a los autores las herramientas para:
+    • Publicar documentos en línea con encabezados, textos, tablas, listas, fotos, etc.
+    • Obtener información en línea a través de vínculos de hipertexto, haciendo clic con el botón de un ratón.
+    • Diseñar formularios para realizar transacciones con servicios remotos, para buscar información, hacer reservas,
+      pedir productos, etc.
+    • Incluir hojas de cálculo, videoclips, sonidos, y otras aplicaciones directamente en sus documentos.
+  
+  El HTML fue desarrollado originalmente por Tim Berners-Lee mientras estaba en el CERN en el año 1980.
+  Distintas versiones de HTML:
+    • HTML 2.0 (noviembre de 1995): Fue desarrollado bajo los auspicios de la Internet Engineering Task Force (IETF) 
+      para codificar lo que era la práctica común a finales de 1994.
+    • HTML+ (1993) y HTML 3.0 (1995): Propusieron versiones mucho más ricas de HTML. A pesar de no haber logrado 
+      nunca el consenso en las discusiones sobre estándares, estos borradores llevaron a la adopción de un número de
+      nuevas características.
+    • HTML 4 (1997): Desarrolla el lenguaje HTML con mecanismos para hojas de estilo, ejecución de scripts, marcos,
+      objetos incluidos, soporte mejorado para texto de derecha a izquierda y direcciones mezcladas, tablas más ricas y 
+      mejoras en formularios, ofreciendo mejoras de accesibilidad para personas con discapacidades.
+    • HTML 5 (2014): La presencia de nuevas etiquetas semánticas que facilitan la estructura de los documentos HTML y 
+      que reemplazarán a etiquetas de versiones anteriores como <div>, que ayudaban a identificar cada bloque en las
+      páginas web. Esta es la principal evolución con respecto al HTML4, ya que este tipo de etiquetas permite que la
+      página web sea indexada con mayor exactitud por los buscadores. Estas nuevas etiquetas ayudan también a definir
+      mejor la estructura y los componentes de la web y brindan información sobre su contenido y relevancia. El HTML5
+      diferencia entre un artículo, sección, vídeo, encabezado, etc.
+
+2. Los principios basicos recomendados por el W3C son:
+    
+    • Separar estructura y presentación: El HTML tiene sus raíces en SGML, que siempre ha sido un lenguaje para la
+      especificación de código estructural. A medida que el HTML madura, un número cada vez mayor de sus elementos
+      y atributos presentacionales ha sido reemplazado por otros mecanismos, en particular las hojas de estilo.
+      La experiencia ha demostrado que separando la estructura de un documento de sus aspectos presentacionales se
+      reduce el coste de servir a un amplio espectro de plataformas, medios, etc. y se facilitan las revisiones del
+      documento.
+
+    • Considerar la accesibilidad universal a la Web: Para hacer la Web más accesible a todos, en especial a aquéllos
+      con discapacidades, los autores deberían considerar cómo pueden representarse sus documentos en diferentes
+      plataformas: navegadores basados en voz, lectores braille, etc. No estamos recomendando a los autores que limiten
+      su creatividad, sólo que consideren representaciones alternativas de sus diseños. El HTML ofrece un número de
+      mecanismos con este fin.
+    
+    • Ayudar a los agentes de usuario con la representación incremental: Mediante un diseño cuidadoso de las tablas y 
+      haciendo uso de las nuevas características de las tablas de HTML 4, los autores pueden ayudar a los agentes de
+      usuario a representar los documentos más rápidamente.
+
+3. 
+    • Desaprobado:
+      Un elemento o atributo desaprobado es aquel que ha quedado anticuado por la presencia de estructuras nuevas. Los
+      elementos desaprobados se definen en el manual de referencia en los lugares apropiados, pero claramente marcados 
+      como desaprobados. Los elementos desaprobados pueden declararse obsoletos en versiones futuras de HTML.
+
+      Los agentes de usuario deberían seguir dando soporte a los elementos desaprobados por razones de compatibilidad 
+      con versiones anteriores.
+
+    • Obsoleto:
+      Un elemento o atributo obsoleto es aquél para el cual no hay garantía de soporte por parte de un agente de usuario. 
+
+4.  El DTD (Document Type Definition) define la sintaxis de las estructuras de formato. El DTD puede incluir definiciones
+    adicionales, tales como referencias a entidades de caracteres.
+    
+    Tipos de DTD contemplados:​
+
+  • HTML 4.01 Strict (estricto):
+    Este DTD excluye los elementos y atributos obsoletos, como los relacionados con presentación (por ejemplo, <font> 
+    o atributos como bgcolor). Está destinado a documentos que usan exclusivamente HTML estructural y CSS para la 
+    presentación.
+
+  • HTML 4.01 Transitional (transicional):
+    Este DTD permite tanto el HTML estructural como los elementos y atributos obsoletos por motivos de compatibilidad
+    con navegadores más antiguos.
+
+  • HTML 4.01 Frameset:
+    Este DTD se usa para documentos que utilizan frames (marcos), que permiten dividir la ventana del navegador en
+    varias áreas independientes.
+
+5. Los metadatos son la información sobre un documento más que el contenido del propio documento.
+
+  En general, la especificación de metadatos implica dos pasos:
+    • Declaración de una propiedad y de un valor para esta propiedad. Esto puede hacerse de dos maneras:
+        • Desde dentro de un documento, por medio del elemento META.
+        • Desde fuera de un documento, vinculando los metadatos por medio del elemento LINK 
+
+    • Referencia a un perfil en el que se definen la propiedad y sus valores legales. Para designar un perfil, se usa el
+      atributo profile del elemento HEAD.

@@ -1,0 +1,161 @@
+2.a) <!-- Código controlado el día 12/08/2009 -->
+    • Ubicación: Puede ir en cualquier lado del documento
+    • Efecto: Es un comentario que dice "Código controlado el día 12/08/2009". Solo es visible para desarrolladores
+    • Elementos: Comentario
+    • Etiquetas: <!-- -->
+    • Atributos: No tiene
+
+
+2.b) <div id="bloque1">Contenido del bloque1</div>
+    • Ubicación: Dentro del <body> del documento.
+    • Efecto: Crea una sección de bloque que contiene el texto "Contenido del bloque1".
+    • Elementos: div
+    • Etiquetas: <div> </div>
+    • Atributos: 
+        • Nombre: id
+        • Valor: bloque1
+        • Obligatoriedad: No es obligatorio en todos los div pero es obligatorio si se usa el atributo.
+
+2.c) <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+    • Ubicación: Dentro del <body> del documento.
+    • Efecto: Inserta una imagen en la página web
+    • Elementos: img
+    • Etiquetas: <img> sin etiqueta de cierre
+    • Atributos: 
+        
+        • Nombre: src
+        • Valor: "" 
+        • Obligatoriedad: sí, es la fuente de la imagen
+        
+        • Nombre: alt
+        • Valor: "lugar imagen"
+        • Obligatoriedad: sí
+        
+        • Nombre: id
+        • Valor: "im1"
+        • Obligatoriedad: no
+
+        • Nombre: name
+        • Valor: "im1"
+        • Obligatoriedad: no
+
+        • Nombre: width
+        • Valor: "32"
+        • Obligatoriedad: no
+
+        • Nombre: height
+        • Valor: "32"
+        • Obligatoriedad: no
+
+        • Nombre: longdesc
+        • Valor: "detalles.htm"
+        • Obligatoriedad: no
+
+2.d) <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    • Ubicación: Dentro del <head> del documento.
+    • Efecto: Aporta informacion sobre el documento
+    • Elementos: meta
+    • Etiquetas: <meta> sin etiqueta de cierre
+    • Atributos: 
+
+        • Nombre: name
+        • Valor: "keywords"
+        • Obligatoriedad: sí
+
+        • Nombre: lang
+        • Valor: "es"
+        • Obligatoriedad: no
+
+        • Nombre: content
+        • Valor: "casa, compra, venta, alquiler"
+        • Obligatoriedad: si
+
+        • Nombre: http-equiv
+        • Valor: "expires"
+        • Obligatoriedad: si
+
+        • Nombre: content
+        • Valor: "16-Sep-2019 7:49 PM"
+        • Obligatoriedad: si
+
+2.e) <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"rel="help">Resumen HTML </a>
+
+    • Ubicación: Dentro del <body> del documento.
+    • Efecto: Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
+    • Elementos: a
+    • Etiquetas: <a href="..." ...> </a>
+    • Atributos: 
+
+        • Nombre: href
+        • Valor: "http://www.e-style.com.ar/resumen.html"
+        • Obligatoriedad: sí
+
+        • Nombre: type
+        • Valor: "text/html"
+        • Obligatoriedad: no
+
+        • Nombre: hreflang
+        • Valor: "es"
+        • Obligatoriedad: no
+
+        • Nombre: charset
+        • Valor: "utf-8"
+        • Obligatoriedad: no
+
+        • Nombre: rel
+        • Valor: "help"
+        • Obligatoriedad: no
+
+2.f) <table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+    • Ubicación: Dentro del <body> del documento.
+    • Efecto: Muestra una tabla representando datos en 2 o más dimensiones
+    • Elementos: table, caption, tr, th, td
+    • Etiquetas: 
+        • <table> </table>
+        • <caption> </caption>
+        • <tr> </tr>
+        • <th> </th>
+        • <td> </td>
+    • Atributos: 
+      • table:
+        • Nombre: width
+        • Valor: "200"
+        • Obligatoriedad: no
+
+        • Nombre: summary
+        • Valor: "Datos correspondientes al ejercicio vencido"
+        • Obligatoriedad: no
+
+      • caption:
+        • Nombre: align
+        • Valor: "top"
+        • Obligatoriedad: no
+
+      • th:
+        • Nombre: scope
+        • Valor: "col",  "row"
+        • Obligatoriedad: no
