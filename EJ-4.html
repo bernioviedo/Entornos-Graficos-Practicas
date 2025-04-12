@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+  <div>
+    <a href="https://www.frro.utn.edu.ar/">
+      <img src="im1.jpg" alt="logo utn" width="100px" height="100px">
+    </a>
+  </div>
+<br>
+<hr color="#000000" size="3px">
+<br>
+<h2>AÑO 2008</h2>
+
+<table width="400" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2">
+      <div align="center">Exámenes</div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Fecha: <span id="currentDate"></span>    
+    <script>
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString();
+      document.getElementById("currentDate").textContent = formattedDate; 
+    </script></td>
+
+    <td align="right" >Aprobados</td>
+  </tr>
+  <tr>
+    <td align="right">24/30</td>
+  </tr>
+</table>
+
+<ol>
+  <li><a href="#">Enunciado del examen</a></li>
+  <li><a href="#"  target="_blank">Resolución</a></li>
+</ol>
+
+<br>
+<br>
+
+<div>Puede realizar conusltas completando el siguiente formulario:</div>
+
+<form method="post" action="mailto:x@x.com">
+  <table>
+    <tr>
+      <td style="vertical-align: top; padding-right: 10px;"><strong style="font-size: larger;">E-mail:</strong></td>
+      <td><input type="email" id="emailusuario" required style="width: 100%;"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-right: 10px;"><strong style="font-size: larger;">Consulta:</strong></td>
+      <td><textarea rows="4" id="consulta" required style="width: 100%;"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="ENVIAR"></td>
+      <td><input type="reset" value="BORRAR" style="margin-left: -72px;"></td>
+    </tr>
+  </table>
+</form>
+
+<h3>Enunciado del examen</h3>
+<p style="margin-right: 1100px; word-wrap: break-word;">Ejercicio 1: ..................................... .........................................................</p>
+<p style="margin-right: 1100px; word-wrap: break-word;">Ejercicio 2: ..................................... .........................................................</p>
+<br>
+<div>Para más información dirigirse a <a href="#maildecontacto">contacto@xx.com</a></div>
+</body>
+</html>
