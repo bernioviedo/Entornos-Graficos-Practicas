@@ -1,0 +1,319 @@
+<div>3.a)</div>
+<br>
+<div> Esta ancla nos lleva hacia google en esta misma pestaña:</div>
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> 
+<br><br>
+<div>Esta ancla nos lleva hacia google pero debido al target="_blank" nos lo abre en una nueva pestaña:</div>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<br><br>
+<div>En estas anclas el "Click aquí para ir a Google" nos lleva hasta la parte superior de la página, mientras que el "Click aquí para volver arriba" no hace nada ya que #arriba no está definido como un enlace
+</div>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+  <a href="#">Click aquí para ir a Google</a>
+  <a href="#arriba">Click aquí para volver arriba</a> 
+  <a name="arriba" id="arriba"></a>
+<br><br><br>
+
+<div>3.b)</div>
+<br>
+<div>Acá vemos una imagen con un link al lado que nos redirige a google, al clickear en la imagen no pasa nada:</div>
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<br><br>
+<div>En este caso al clickear en la imagen nos redirige a google, mientras que el Click aquí es solo un texto con el cual no se puede interactuar debido a que el ancla no abarca al Click aquí: </div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<br><br>
+<div>En cambio, acá el ancla sí abarca tanto a la imagen como al Click aquí, por lo tanto al clickear cualquiera de los dos somos redireccionados a google:</div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<br><br>
+<div>En este último caso tenemos dos anclas, una para la imagen y otra para el texto, ambas nos redireccionan al mismo link, por lo tanto ocurre lo mismo, pero en caso de desearlo podríamos hacer que la imagen nos lleve a un sitio y el texto a otro:</div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+<br><br><br>
+
+<div>3.c)</div>
+<br>
+<div>Crea una lista no ordenada de elementos:</div>
+<ul>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ul>
+<br><br>
+<div>Crea una lista ordenada, en este caso numerada, de elementos:</div>
+<ol>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ol>
+
+<br><br>
+<div>Hace que cada elemento sea una lista por sí mismo, creando una separación entre cada elemento, la etiqueta value le da el número al elemento:</div>
+<ol>
+  <li>xxx</li>
+</ol>
+<ol>
+  <li value="2">yyy</li>
+</ol>
+<ol>
+  <li value="3">zzz</li>
+</ol> 
+
+<br><br>
+<div>El elemento blockquote crea citas en bloque, lo que le brinda una sangría, aunque en este caso es un parrafo y no una lista de elementos:</div>
+<blockquote>
+  <p>1. xxx<br />
+    2. yyy<br />
+    3. zzz</p>
+</blockquote>
+<br><br><br>
+
+<div>3.d)</div>
+<br>
+<div>El elemento th define las celdas de Columna 1 y Columna 2 como encabezados de la tabla:</div>
+<table border="1" width="300">
+  <tr>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+<br><br>  
+<div>Utiliza el elemento td, el cual define la celda de una tabla que contiene datos, junto con un div que alinea el texto en el centro y lo pone en negrita con align y strong respectivamente. De esta forma tenemos el mismo resultado que arriba: </div>
+<table border="1" width="300">
+  <tr>
+    <td>
+      <div align="center"><strong>Columna 1</strong></div>
+    </td>
+    <td>
+      <div align="center"><strong>Columna 2</strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+<br><br><br>
+
+<div>3.e)</div>
+<br>
+<div>Se utiliza el elemento caption, el cual es usado para brindarle un título descriptivo a las tablas:</div>
+<table width="200">
+  <caption>
+    Título
+  </caption>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">
+      &nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  </table>
+  <br><br>
+
+  <div>El título se lo coloca con un div centrado el cual, junto con el colspan utilizado para que ocupe las 3 columnas de la tabla, lo hace idéntico al caption:</div>
+  <table width="200">
+    <tr>
+    <td colspan="3">
+      <div align="center">Título</div>
+    </td>
+    </tr>
+    <tr>
+      <td bgcolor="#dddddd">&nbsp;</td>
+      <td bgcolor="#dddddd">&nbsp;</td>
+      <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="#dddddd">&nbsp;</td>
+      <td bgcolor="#dddddd">&nbsp;</td>
+      <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    </table>
+<br><br><br>
+
+<div>3.f)</div>
+<br>
+<div>El rowspan="2" hace que el primer bloque combine las dos primeras filas:</div>
+<table width="200">
+  <tr>
+    <td colspan="3">
+      <div align="center">Título</div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+<br><br>
+
+<div>En este caso en lugar de rowspan se utilizó colspan="2", lo cual hizo que se combinen las dos primeras columnas del primer elemento de la tabla:</div>
+<table width="200">
+  <tr>
+    <td colspan="3">
+      <div align="center">Título</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+
+<br><br><br>
+
+<div>3.g)</div>
+<br>
+
+<div>El atributo border nos da un borde para la tabla con mayor distancia de separación dependiendo del valor del atributo, en este caso es 1:</div> 
+<table width="200" border="1">
+  <tr>
+    <td colspan="3">
+      <div align="center">Título</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+<br><br>
+
+<div>Con el cellpadding y el cellspacing establecemos el espacio entre el contenido de una celda y su borde y entre celdas en 0, por lo tanto nos queda sin el espacio en blanco entre celdas del ejemplo anterior:</div>
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2">
+      <div align="center">Título</div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+
+<br><br><br>
+
+<div>3.h)</div>
+<br>
+
+<div>Login con texto ingresado por defecto al cargar la página con el atributo value="" en este caso dandole el valor de xxx, el input de contraseña tiene el atributo type="password" lo cual hace que no se vea el texto escrito:</div>
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+    Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+  </fieldset>
+  <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+<br><br>
+
+<div>Login sin texto ingresado, la contraseña es visible ya que el atributo type tiene como valor text, lo cual hace que no se oculte el texto ingresado:</div>
+<form id="form2" name="form2" action="" method="get" target="_blank">
+  LOGIN<br />
+  <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+  <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+  <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+<br><br>
+
+<div>Login sin atributo value por lo tanto sin texto ingresado por defecto pero sí con atributo type de valor password para la contraseña, haciendo que no sea visible al ser escrita:</div>
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method=" p ost" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu3" name="usu3" /><br />
+    Clave: <input type="password" id="clave3" name="clave3" />
+  </fieldset>
+  <input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+<br><br><br>
+
+<div>3.i)</div>
+<br>
+<div>Crea un botón con el elemento button, al cual dentro le inserta una imagen y un texto de CLICK AQUÍ:</div>
+<label>Botón 1
+  <button type="button" name="boton1" id="boton1">
+    <img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+    <b>CLICK AQUÍ</b></button></label>
+<br><br>
+
+<div>El elemento input nos da la posibilidad de crear un boton asignandole el type="button" sin utilizar el elemento button:</div>
+<label>Botón 2
+  <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+<br><br><br>
+
+<div>3.j)</div>
+<br>
+<div>Nos da a seleccionar entre dos opciones, X e Y, al tener ambos elementos input el mismo nombre solo se puede seleccionar una de las opciones a la vez, no ambas simultaneamente:</div>
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+  <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label>
+</p>
+<br>
+
+<div>Este caso también son dos opciones solo que al tener ambos atributos name distntos nombres, opcion1 y opcion2 respectivamente, se pueden seleccionar ambas opciones a la vez:</div>
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+  <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label>
+</p>
+<br><br><br>
+
+<div>3.k)</div>
+<br>
+<div>:El elemento optgroup nos permite crear un menú desplegable con agrupación creando separación entre dos casos:</div>
+<select name="lista">
+  <optgroup label="Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+  <optgroup label="Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+</select>
+<br><br>
+
+<div>El atributo multiple nos permite ver y seleccionar varias opciones, no creando un menú desplegable sino un menu scrolleable, también siendo separados en dos casos con el elemento optgroup:</div>
+<select name="lista[]" multiple="multiple">
+  <optgroup label=" Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+  <optgroup label=" Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+</select>
+
+</body>
+
