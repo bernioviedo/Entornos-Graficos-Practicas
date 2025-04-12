@@ -1,0 +1,131 @@
+<div>3.a)</div>
+<br>
+<div> Esta ancla nos lleva hacia google en esta misma pestaña:</div>
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> 
+<br><br>
+<div>Esta ancla nos lleva hacia google pero debido al target="_blank" nos lo abre en una nueva pestaña:</div>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<br><br>
+<div>En estas anclas el "Click aquí para ir a Google" nos lleva hasta la parte superior de la página, mientras que el "Click aquí para volver arriba" no hace nada ya que #arriba no está definido como un enlace
+</div>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+  <a href="#">Click aquí para ir a Google</a>
+  <a href="#arriba">Click aquí para volver arriba</a> 
+  <a name="arriba" id="arriba"></a>
+<br><br><br>
+
+<div>3.b)</div>
+<br>
+<div>Acá vemos una imagen con un link al lado que nos redirige a google, al clickear en la imagen no pasa nada:</div>
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<br><br>
+<div>En este caso al clickear en la imagen nos redirige a google, mientras que el Click aquí es solo un texto con el cual no se puede interactuar debido a que el ancla no abarca al Click aquí: </div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<br><br>
+<div>En cambio, acá el ancla sí abarca tanto a la imagen como al Click aquí, por lo tanto al clickear cualquiera de los dos somos redireccionados a google:</div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<br><br>
+<div>En este último caso tenemos dos anclas, una para la imagen y otra para el texto, ambas nos redireccionan al mismo link, por lo tanto ocurre lo mismo, pero en caso de desearlo podríamos hacer que la imagen nos lleve a un sitio y el texto a otro:</div>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+<br><br><br>
+
+<div>3.c)</div>
+<br>
+<div>Crea una lista no ordenada de elementos:</div>
+<ul>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ul>
+<br><br>
+<div>Crea una lista ordenada, en este caso numerada, de elementos:</div>
+<ol>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ol>
+
+<br><br>
+<div>Hace que cada elemento sea una lista por sí mismo, creando una separación entre cada elemento, la etiqueta value le da el número al elemento:</div>
+<ol>
+  <li>xxx</li>
+</ol>
+<ol>
+  <li value="2">yyy</li>
+</ol>
+<ol>
+  <li value="3">zzz</li>
+</ol> 
+
+<br><br>
+<div>El elemento blockquote crea citas en bloque, lo que le brinda una sangría, aunque en este caso es un parrafo y no una lista de elementos:</div>
+<blockquote>
+  <p>1. xxx<br />
+    2. yyy<br />
+    3. zzz</p>
+</blockquote>
+<br><br><br>
+
+<div>3.d)</div>
+<br>
+<div>El elemento th define las celdas de Columna 1 y Columna 2 como encabezados de la tabla:</div>
+<table border="1" width="300">
+  <tr>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+<br><br>  
+<div>Utiliza el elemento td, el cual define la celda de una tabla que contiene datos, junto con un div que alinea el texto en el centro y lo pone en negrita con align y strong respectivamente. De esta forma tenemos el mismo resultado que arriba: </div>
+<table border="1" width="300">
+  <tr>
+    <td>
+      <div align="center"><strong>Columna 1</strong></div>
+    </td>
+    <td>
+      <div align="center"><strong>Columna 2</strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
