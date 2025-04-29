@@ -1,0 +1,54 @@
+p.quitar {
+  color: red;
+}
+● Selector: p.quitar - Selecciona elementos <p> que tengan la clase "quitar".
+● Efecto visual:
+    - color: red: Hace que el color del texto sea rojo.
+
+*.desarrollo {
+  font-size: 8px;
+}
+● Selector: *.desarrollo - Selecciona cualquier tipo de elemento que tenga la clase "desarrollo".
+● Efecto visual:
+    - font-size: 8px: Determina el tamaño de la fuente en 8 píxeles.
+
+
+.importante {
+  font-size: 20px;
+}
+● Selector: .importante - Selecciona cualquier elemento que tenga la clase "importante".
+● Efecto visual:
+    - font-size: 20px: - Define el tamaño de la fuente en 20 píxeles.
+
+
+<p class="desarrollo">
+En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+Aplica la clase "desarrollo", este párrafo tiene un tamaño de texto de 8px
+
+<p class="quitar">
+Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+Aplica la clase "quitar", este párrafo tiene el texto de color rojo
+
+<p >
+En este otro párrafo trataremos otro tema:<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+Este párrafo no tiene clases y mantiene el estilo por defecto del navegador
+
+<p class="importante">
+Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+Aplica la clase "importante", este párrafo tiene tamaño de texto de 20px
+
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+Este encabezado mantiene su estilo por defecto del navegador, ya que la clase quitar solo
+aplica en párrafos debido al p. previo a su nombre
+
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+Aplica las clases "quitar" e "importante" este párrafo tiene texto de color rojo (por la clase "quitar") 
+y un tamaño de texto de 20px (por la clase "importante")
