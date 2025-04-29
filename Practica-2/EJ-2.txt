@@ -1,0 +1,44 @@
+p#normal {
+  font-family: arial,helvetica;
+  font-size: 11px;
+  font-weight: bold;
+}
+● Selector: p#normal - Selecciona elementos <p> que tengan el id "normal"
+● Efecto visual:
+    - font-family: arial,helvetica: Hace que la fuente sea Arial o Helvetica como alternativa
+    - font-size: 11px: Hace que el tamaño de letra de 11px
+    - font-weight: bold: Hace que el texto esté en negrita
+
+
+
+*#destacado {
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+}
+● Selector: *#destacado - Selecciona cualquier tipo de elemento con el id "destacado", como vemos en el ejemplo de abajo
+            se puede utilizar tanto en párrafos como en tablas
+● Efecto visual:
+    - border-style: solid: Da un borde sólido
+    - border-color: blue: El borde es de color azul
+    - border-width: 2px: El borde tiene grosor de 2px
+
+#distinto {
+  background-color: #9EC7EB;
+  color: red;
+}
+● Selector: #distinto - Selecciona cualquier elemento con el id "distinto", pero no cualquier tipo de elemento
+● Efecto visual:
+    - background-color: #9EC7EB: Da un fondo de color azul claro (#9EC7EB)
+    - color: red: Hace que el texto sea color rojo
+
+<p id="normal">Este es un párrafo</p>
+Este párrafo tiene las características del selector "normal", fuente Arial o Helvetica, tamaño de letra de 11px
+y el texto en negrita
+
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+Este párrafo y esta tabla tienen las características de "destacado", un borde sólido de color azul y de grosor de 2px
+
+<p id="distinto">Este es el último párrafo</p>
+Este párrafo tiene las características de "distinto", el color de fondo #9EC7EB y el color de letra rojo
