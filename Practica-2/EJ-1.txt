@@ -1,0 +1,105 @@
+1. ¿ Qué es CSS y para qué se usa?
+
+  Es un lenguaje de hoja de estilo que permite que los autores y los usuarios asocien un estilo 
+  (por ejemplo, fuentes, espaciado y señales sonoras) a los documentos estructurados (por ejemplo,
+  documentos HTML y aplicaciones XML). Separando el estilo de presentación del contenido de los
+  documentos, CSS simplifica la creación y mantenimiento de los sitios Web.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+  Selector:
+  El elemento HTML en el que comienza la regla. Esta selecciona el(los) elemento(s) a dar estilo. 
+  Para dar estilo a un elemento diferente, solo cambia el selector.
+
+  Declaración:
+  Una sola regla como color: red; especifica a cuál de las propiedades del elemento quieres dar estilo.
+
+  Propiedades:
+  Maneras en las cuales puedes dar estilo a un elemento HTML. En CSS, seleccionas qué propiedad quieres 
+  afectar en tu regla.
+
+  Valor de la propiedad:
+  A la derecha de la propiedad, después de los dos puntos (:), tienes el valor de la propiedad, para elegir
+  una de las muchas posibles apariencias para una propiedad determinada (hay muchos valores para color además de red).
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+
+ i. CSS Interno: Se coloca dentro del documento HTML, en la sección <head>, usando la etiqueta <style>.
+ ii. CSS Externo: Los estilos se definen en un archivo separado con extensión .css y se enlazan al HTML.
+ iii. CSS en línea: Se aplica directamente a elementos HTML usando el atributo style.
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+
+  ● Selectores de tipo, de clase y de ID:
+    Este grupo incluye selectores que delimitan un elemento HTML, como por ejemplo un <h1>.
+    h1 {
+    }
+    
+    También incluye selectores que delimitan una clase:
+    .box {
+    }
+
+    o un ID:
+    #unique {
+    }
+    
+  ● Selectores de atributo:
+    Este grupo de selectores te proporciona diferentes formas de seleccionar elementos según la presencia de
+    un atributo determinado en un elemento:
+    a[title] {
+    }
+
+    O incluso hacer una selección basada en la presencia de un atributo que tiene un valor particular asignado:
+    a[href="https://example.com"]
+    {
+    }
+  
+  ● Las pseudoclases y los pseudoelementos:
+    Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento. La pseudoclase
+    :hover, por ejemplo, selecciona un elemento solo cuando se le pasa el ratón por encima.
+    
+    a: hover {
+    }
+    
+    También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí.
+    Por ejemplo, ::first-line siempre selecciona la primera línea del texto que se encuentra dentro de un elemento
+    (<p>, en el ejemplo siguiente), y actúa como si un elemento <span> hubiera delimitado la primera línea, seleccionado
+    y aplicado estilo.
+    
+    p::first-line {
+    }
+
+  ● Combinadores:
+    El último grupo de selectores combina otros selectores con el fin de delimitar elementos de nuestros documentos.
+    El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento <article> utilizando el operador de
+    combinación hijo (>):
+    article > p {
+    }
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+  Una pseudoclase es un selector que marca los elementos que están en un estado específico, por ejemplo, los que son el 
+  primer elemento de su tipo, o aquellos por los que el cursor les pasa por encima. Tienden a actuar como si hubieras 
+  aplicado una clase en una parte determinada del documento y, a menudo, ayudan a reducir el exceso de clases y 
+  proporcionan un marcado más flexible y fácil de mantener.
+  Las pseudoclases más usadas en vínculos son:
+  ● :link: Selecciona los enlaces no visitados (los que aún no se hizo clic).
+  ● :visited: Selecciona los enlaces que el usuario ya ha visitado.
+  ● :hover: Aplica estilos cuando el usuario pasa el mouse sobre el enlace.
+  ● :active: Se activa mientras se está haciendo clic en el enlace (en el momento que se presiona el botón del mouse).
+  ● :focus: Aplica estilos cuando el enlace recibe el enfoque (por ejemplo, con el teclado al usar Tab).
+
+6. ¿ Qué es la herencia?
+
+  La herencia en CSS es un mecanismo por el cual ciertas propiedades CSS se transmiten automáticamente de un elemento
+  padre a sus elementos hijos en el árbol del documento HTML. Cuando se aplican estilos a un elemento padre, algunos de 
+  esos estilos pueden afectar también a sus elementos hijos, a menos que se especifique lo contrario.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+  La cascada en las hojas de estilo significa que el orden de las reglas importa en CSS: cuando dos reglas tienen la 
+  misma especificidad, se aplica la que aparece en último lugar en el CSS.
+  Cuando varios estilos compiten por aplicarse a un mismo elemento, el navegador sigue este orden de prioridad:
+    Origen del estilo: ¿De dónde viene la regla CSS? (Estilos del navegador, del usuario, del autor o en línea)
+    Especificidad: ¿Qué selector tiene más peso? (Por ej un #id pesa mas que una .clase)
+    Orden de aparición: ¿Qué regla fue declarada última?
