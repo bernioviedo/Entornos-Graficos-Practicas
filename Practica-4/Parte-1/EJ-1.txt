@@ -1,0 +1,23 @@
+<?php
+function doble($i) {              --> funcion con parametro i que multiplica el parametro por 2
+ return $i*2;                   
+}
+$a = TRUE;                        --> variable tipo booleana
+$b = "xyz";                       --> variable tipo string
+$c = 'xyz';                       --> variable tipo string
+$d = 12;                          --> variable tipo integer
+echo gettype($a);                 --> muestra tipo de la variable a
+echo gettype($b);                 --> muestra tipo de la variable b
+echo gettype($c);                 --> muestra tipo de la variable c
+echo gettype($d);                 --> muestra tipo de la variable d
+if (is_int($d)) {                 --> operador if, si la variable d es integer le suma 4 a su valor
+ $d += 4;
+}
+if (is_string($a)) {              --> operador if, si la variable a es string muestra "Cadena:" y el valor de a, en nuestro caso no imprime nada porque a es booleana
+ echo "Cadena: $a";
+}
+$d = $a ? ++$d : $d*3;            --> operador ternario, al ser a TRUE, se evalúa la parte de ++$d, la cual hace que d aumente su valor de 16 a 17 y luego se le asigna ese valor a d
+$f = doble($d++);                 --> primero se pasa d a la funcion doble que devuelve 34 (17*2) y luego se le incrementa el valor a d a 18 ya que el ++ estan después de la d, entonces es un post incremento. f adquiere el valor de 34
+$g = $f += 10;                    --> f se incrementa a 44 y se le asigna ese valor a g
+echo $a, $b, $c, $d, $f , $g;     --> imprime los valores de todas las variables, dando como resultado "1xyzxyz184444"
+?> 
