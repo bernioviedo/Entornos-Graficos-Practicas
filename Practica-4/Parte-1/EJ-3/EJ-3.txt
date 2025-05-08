@@ -1,0 +1,5 @@
+a)  Imprime una tabla con 5 filas y 2 columnas a la cual se le añaden elementos vacios dentro mediante
+    el uso de dos operadores for
+
+b)  Al ingresar una edad determina si es mayor o igual a 21 años, en caso de serlo imprime un texto
+    que dice "Mayor de edad", en caso de que el número ingresado sea menor de 21 imprime "Menor de edad"

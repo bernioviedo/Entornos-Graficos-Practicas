@@ -1,3 +1,6 @@
-a) Sí, son los 3 códigos diferentes formas de imprimir la secuencia de números del 1 al 10
-b) Sí, 4 códigos equivalentes para imprimir la secuencia de números del 1 al 10 usando el operador for
-c) Sí, ambos códigos son equivalentes para imprimir cuál es el valor de $i siempre y cuando sea 0, 1 o 2, en un caso usando el operador if y en el otro el operador switch
+a)  Sí, son los 3 códigos diferentes formas de imprimir la secuencia de números del 1 al 10
+
+b)  Sí, 4 códigos equivalentes para imprimir la secuencia de números del 1 al 10 usando el operador for
+
+c)  Sí, ambos códigos son equivalentes para imprimir cuál es el valor de $i siempre y cuando sea 0, 1 o 2,
+    en un caso usando el operador if y en el otro el operador switch
