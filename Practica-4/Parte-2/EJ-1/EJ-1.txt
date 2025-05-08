@@ -1,0 +1,1 @@
+Ambas son formas equivalentes de declarar arrays

@@ -1,0 +1,8 @@
+a)  Imprime el elemento x de la matriz al que se le asignó el string "bar" y luego imprime el elemento 12, al 
+    que se le asignó true, por lo tanto imprime 1. Resultando así la salida "bar1"
+
+b)  Al elemento 6 del array se le asigna el valor 5, al elemento 13 el valor 9 y al elemento "a" el valor 42.
+    Al imprimir da como resultado la salida "5942"
+
+c)  Se le asignan valores a diferentes elementos del array pero luego son borrados con la función unset(),
+    de esta forma el código no imprime nada.
