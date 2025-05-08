@@ -1,0 +1,5 @@
+<?php
+echo "El $flor $color \n";    --> Imprime solo el "El" del inicio y nos da dos errores indicando que no encuentra las variables $flor y $color
+include 'datos.php';
+echo " El $flor $color";      --> Imprime "El clavel blanco" ya que ahora sí incluye las variables del archivo datos.php
+?> 
