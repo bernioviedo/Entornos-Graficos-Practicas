@@ -1,0 +1,4 @@
+a)  La salida es un texto el cual nos indica la fecha y hora exactas en la que visitamos la página
+
+b)  La salida son los dos argumentos que se le otorguen a la funcion con un símbolo + y el resultado
+    de la respectiva suma, en este caso "5+6=11"
